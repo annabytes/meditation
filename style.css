@@ -38,12 +38,17 @@ h4 {
 }
 
 .scroll-up-btn {
-  background: none;
+  background: var(--white);
+  border-radius: 50%;
+  padding: 5px;
+  width: 54px;
+  height: 54px;
   border: none;
   position: fixed;
   bottom: 32px;
   right: 32px;
   cursor: pointer;
+  z-index: 1;
 
   img {
     width: 44px;
@@ -571,8 +576,10 @@ h4 {
   margin-bottom: 46px;
 }
 .feedback-photo {
-  width: 79px;
-  height: 79px;
+  min-width: 79px;
+  min-height: 79px;
+  max-width: 79px;
+  max-height: 79px;
   object-position: center;
   object-fit: cover;
   border-radius: 50%;
@@ -674,4 +681,108 @@ h4 {
 }
 .footer-header {
   font-weight: 500;
+}
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 1439px) {
+  :root {
+    --block-size: 940px;
+  }
+  .feedback-card {
+    min-width: calc((100% - 18px) / 2);
+  }
+  .author-photo {
+    display: none;
+  }
+  .bio-container {
+    max-width: unset;
+  }
+  .header-title {
+    font-size: 64px;
+  }
+  .header-content {
+    width: 1030px;
+    height: 866px;
+    background-position: 0 380px, 0 bottom;
+    background-size: 120%;
+  }
+  .advantages {
+    flex-wrap: wrap;
+    row-gap: 30px;
+  }
+  .advantage {
+    min-width: 45%;
+  }
+  .advantage-icon {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  :root {
+    --block-size: 95vw;
+  }
+  .advantages {
+    gap: 36px;
+  }
+  .header {
+    padding: 0;
+  }
+  .header-content {
+    border: none;
+    margin-top: 62px;
+  }
+  .nav-links-container,
+  .header-title,
+  .duration {
+    display: none;
+  }
+  .header-content {
+    background-image: url('./asstes/img/header-bckg.jpg');
+    background-size: 120% auto;
+    background-position: bottom;
+    width: 100%;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-title {
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .duration {
+    text-shadow: none;
+    color: var(--blue);
+    text-align: center;
+    padding-top: 27px;
+    position: relative;
+  }
+  .duration::before {
+    content: '';
+    position: absolute;
+    height: 3px;
+    left: var(--block-padding-sides);
+    top: 40px;
+    width: 30%;
+    background-color: var(--sky-blue);
+  }
+  .duration::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    right: var(--block-padding-sides);
+    top: 40px;
+    width: 30%;
+    background-color: var(--sky-blue);
+  }
+  .reason {
+    width: 95%;
+  }
+  .mobile {
+    display: block;
+  }
 }
