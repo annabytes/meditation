@@ -1,12 +1,18 @@
 @font-face {
   font-family: 'Mak';
-  src: url('./Mak.woff');
+  src: url('./MAK-bold.otf');
 }
 
 @font-face {
   font-family: 'Avenir Next';
   font-weight: 600;
   src: url('./AvenirNextCyr-Demi.ttf');
+}
+
+@font-face {
+  font-family: 'Avenir Next';
+  font-weight: 700;
+  src: url('./AvenirNextCyr-Bold.ttf');
 }
 
 @font-face {
