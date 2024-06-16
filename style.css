@@ -721,6 +721,12 @@ h4 {
   .advantage-icon {
     margin-bottom: 20px;
   }
+  .bonus-info-1 {
+    padding: 32px 10% 16px 40%;
+  }
+  .bonus-info-2 {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 769px) {
@@ -797,6 +803,9 @@ h4 {
     text-align: left;
     padding: 0;
   }
+  .nav-header:hover {
+    color: var(--blue);
+  }
   .duration::after {
     content: '';
     position: absolute;
@@ -825,7 +834,6 @@ h4 {
   .plans-title:hover {
     color: var(--white);
   }
-
   .plans-title {
     width: 90%;
     display: inline-block;
@@ -1161,21 +1169,19 @@ h4 {
   .conclusion-icon-content::before {
     top: 100px;
   }
-      br {
+  .conclusion-text {
+    font-size: 20px;
+    line-height: 28px;
+    br {
       display: block;
       content: '';
       margin-top: 24px;
     }
-  .conclusion-text {
-    font-size: 20px;
-    line-height: 28px;
-
   }
-  .footer{
+  .footer {
     flex-wrap: wrap;
     row-gap: 32px;
     padding: 38px 20px;
-
   }
   .mobile-scroll-header {
     display: flex;
@@ -1188,4 +1194,3 @@ h4 {
     }
   }
 }
-
