@@ -1177,14 +1177,15 @@ h4 {
     padding: 38px 20px;
 
   }
-}
-.mobile-scroll-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  h3 {
-    font-weight: 500;
-    font-size: 22px;
-    padding: 0 46px;
+  .mobile-scroll-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    h3 {
+      font-weight: 500;
+      font-size: 22px;
+      padding: 0 46px;
+    }
   }
 }
+
