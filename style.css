@@ -48,7 +48,7 @@ h4 {
   right: 32px;
   cursor: pointer;
   z-index: 1;
-
+  display: none;
   img {
     width: 44px;
     height: 44px;
@@ -732,7 +732,7 @@ h4 {
   :root {
     --block-size: 95vw;
   }
-  .overflow-hidden{
+  .overflow-hidden {
     width: 100vw;
     overflow-x: hidden;
   }
