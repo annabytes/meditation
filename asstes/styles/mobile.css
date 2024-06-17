@@ -1,7 +1,0 @@
-@media screen and (max-width: 1439px) {
-  :root {
-    --block-size: 1040px;
-  --block-padding-sides: calc(50% - calc(var(--block-size) / 2));
-
-  }
-}

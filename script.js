@@ -1,4 +1,23 @@
 const scrollToTop = document.querySelector('.scroll-up-btn');
+const burger = document.querySelector('.burger');
+const burgerMenu = document.querySelector('.burger-menu');
+const burgerOpenIcon = document.querySelector('.burger-icon');
+const burgerCloseIcon = document.querySelector('.burger-close');
+const navLinks = burgerMenu.querySelectorAll('a');
+
+navLinks.forEach((link) => {
+  link.addEventListener('click', () => {
+    burgerMenu.classList.toggle('burger-menu-open');
+    burgerCloseIcon.classList.toggle('show');
+    burgerOpenIcon.classList.toggle('show');
+  });
+});
+
+burger.addEventListener('click', () => {
+  burgerMenu.classList.toggle('burger-menu-open');
+  burgerCloseIcon.classList.toggle('show');
+  burgerOpenIcon.classList.toggle('show');
+});
 
 window.onscroll = function () {
   scrollFunction();

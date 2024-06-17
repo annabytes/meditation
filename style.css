@@ -62,7 +62,7 @@ h4 {
   justify-content: space-between;
   position: sticky;
   top: 0;
-  z-index: 1;
+  z-index: 5;
   background-color: #fcfcfcc1;
   backdrop-filter: blur(20px);
 
@@ -729,7 +729,7 @@ h4 {
   }
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1024px) {
   :root {
     --block-size: 95vw;
   }
@@ -1172,11 +1172,11 @@ h4 {
   .conclusion-text {
     font-size: 20px;
     line-height: 28px;
-    br {
+    /* br {
       display: block;
       content: '';
       margin-top: 24px;
-    }
+    } */
   }
   .footer {
     flex-wrap: wrap;
@@ -1192,5 +1192,65 @@ h4 {
       font-size: 22px;
       padding: 0 46px;
     }
+  }
+  .nav-mobile {
+    height: 80vh;
+    position: absolute;
+    top: -100%;
+    transform: translateY(100%);
+  }
+  .burger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .show {
+      display: block;
+    }
+    svg {
+      display: none;
+      transition: 200ms ease-in-out;
+    }
+  }
+  .burger-menu {
+    background-color: var(--white);
+    height: 100vh;
+    padding: 42px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 52px;
+    width: 100%;
+    transition: all 300ms;
+    right: -100%;
+    li {
+      list-style: none;
+    }
+    ul {
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    a {
+      display: block;
+      font-size: 16px;
+      font-weight: 500;
+      text-align: center;
+      margin-bottom: 42px;
+      text-decoration: none;
+      width: fit-content;
+    }
+    li.nav-plans {
+      background-color: var(--btn);
+      color: var(--white);
+      padding: 0 35vw;
+      line-height: 46px;
+      border-radius: 22px;
+    }
+  }
+  .burger-menu-open {
+    transform: translateX(-100%);
+    transition: all 500ms;
   }
 }
