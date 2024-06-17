@@ -39,11 +39,9 @@ h4 {
 }
 
 .scroll-up-btn {
-  background: var(--white);
-  border-radius: 50%;
-  padding: 5px;
   width: 54px;
   height: 54px;
+  background: none;
   border: none;
   position: fixed;
   bottom: 32px;

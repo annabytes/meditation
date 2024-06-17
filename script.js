@@ -24,7 +24,7 @@ window.onscroll = function () {
 };
 
 function scrollFunction() {
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
     scrollToTop.style.display = 'block';
   } else {
     scrollToTop.style.display = 'none';
