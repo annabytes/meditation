@@ -8,74 +8,1064 @@
     <title>Meditation</title>
   </head>
   <body>
-    <button class="scroll-up-btn">
-      <img src="./asstes/img/button-up.png" alt="arrow-up" />
-    </button>
-    <nav class="nav">
-      <div class="nav-links-container">
-        <a href="#for-whom" class="nav-link">Для кого</a>
-        <a href="#author" class="nav-link">Про автора</a>
-        <a href="#advantages" class="nav-link">Переваги</a>
-      </div>
-      <a href="#meditation" class="nav-header">Медитувати</a>
-      <div class="nav-links-container">
-        <a href="#plan" class="nav-link">Програма</a>
-        <a href="#feedback" class="nav-link">Відгуки</a>
-        <a href="#plans" class="nav-link-plans">
-          <div class="bubble"></div>
-          <span class="plans-title">Тарифи</span>
-        </a>
-      </div>
-      <div class="burger mobile">
-        <svg
-          class="show burger-icon"
-          width="20"
-          height="14"
-          viewBox="0 0 20 14"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M1 1H19M1 7H19M1 13H19"
-            stroke="#0A437E"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+    <div class="overflow-hidden">
+      <button class="scroll-up-btn">
+        <img src="./asstes/img/button-up.png" alt="arrow-up" />
+      </button>
+      <nav class="nav">
+        <div class="nav-links-container">
+          <a href="#for-whom" class="nav-link">Для кого</a>
+          <a href="#author" class="nav-link">Про автора</a>
+          <a href="#advantages" class="nav-link">Переваги</a>
+        </div>
+        <a href="#meditation" class="nav-header">Медитувати</a>
+        <div class="nav-links-container">
+          <a href="#plan" class="nav-link">Програма</a>
+          <a href="#feedback" class="nav-link">Відгуки</a>
+          <a href="#plans" class="nav-link-plans">
+            <div class="bubble"></div>
+            <span class="plans-title">Тарифи</span>
+          </a>
+        </div>
+        <div class="burger mobile">
+          <svg
+            class="show burger-icon"
+            width="20"
+            height="14"
+            viewBox="0 0 20 14"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M1 1H19M1 7H19M1 13H19"
+              stroke="#0A437E"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <svg
+            class="burger-close"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect
+              x="1"
+              y="1"
+              width="22"
+              height="22"
+              rx="11"
+              stroke="#0A437E"
+              stroke-width="2"
+            />
+            <path
+              d="M8.13752 8.14922L12.0006 12M12.0006 12L15.8638 15.8507M12.0006 12L15.8514 8.13686M12.0006 12L8.14988 15.8631"
+              stroke="#0A437E"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+        </div>
+        <div class="mobile burger-menu">
+          <ul id="menu">
+            <a href="#for-whom"><li>Для кого</li></a>
+            <a href="#author"><li>Про автора</li></a>
+            <a href="#advantages"><li>Переваги</li></a>
+            <a href="#plan"><li>Програма</li></a>
+            <a href="#feedback"><li>Відгуки</li></a>
+            <a
+              href="https://www.instagram.com/daruyusvitlo?igsh=MWljdTB6M21iaHFrNQ=="
+              class="footer-link"
+              target="_blank"
+              ><svg
+                width="44"
+                height="44"
+                viewBox="0 0 44 44"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21.9998 17.4532C21.1006 17.4532 20.2215 17.7198 19.4738 18.2194C18.7261 18.719 18.1434 19.4291 17.7993 20.2599C17.4551 21.0907 17.3651 22.0049 17.5405 22.8868C17.716 23.7688 18.149 24.579 18.7849 25.2148C19.4207 25.8507 20.2309 26.2837 21.1128 26.4591C21.9948 26.6346 22.909 26.5445 23.7398 26.2004C24.5706 25.8563 25.2807 25.2735 25.7803 24.5258C26.2798 23.7781 26.5465 22.8991 26.5465 21.9998C26.5465 21.4028 26.4289 20.8115 26.2004 20.2599C25.9719 19.7083 25.637 19.2071 25.2148 18.7849C24.7926 18.3627 24.2914 18.0278 23.7398 17.7993C23.1881 17.5708 22.5969 17.4532 21.9998 17.4532ZM40.2048 12.9615C40.1952 11.5457 39.9345 10.1429 39.4348 8.81817C39.0669 7.84881 38.4975 6.96851 37.7643 6.23534C37.0312 5.50218 36.1509 4.93282 35.1815 4.56484C33.8568 4.06519 32.4539 3.80448 31.0382 3.79484C28.6732 3.6665 27.9765 3.6665 21.9998 3.6665C16.0232 3.6665 15.3265 3.6665 12.9615 3.79484C11.5457 3.80448 10.1429 4.06519 8.81817 4.56484C7.84881 4.93282 6.96851 5.50218 6.23534 6.23534C5.50218 6.96851 4.93282 7.84881 4.56484 8.81817C4.06519 10.1429 3.80448 11.5457 3.79484 12.9615C3.6665 15.3265 3.6665 16.0232 3.6665 21.9998C3.6665 27.9765 3.6665 28.6732 3.79484 31.0382C3.81457 32.4589 4.07492 33.8661 4.56484 35.1998C4.93119 36.1648 5.50007 37.04 6.23317 37.7665C6.96319 38.5041 7.84538 39.0734 8.81817 39.4348C10.1429 39.9345 11.5457 40.1952 12.9615 40.2048C15.3265 40.3332 16.0232 40.3332 21.9998 40.3332C27.9765 40.3332 28.6732 40.3332 31.0382 40.2048C32.4539 40.1952 33.8568 39.9345 35.1815 39.4348C36.1543 39.0734 37.0365 38.5041 37.7665 37.7665C38.4996 37.04 39.0685 36.1648 39.4348 35.1998C39.934 33.8686 40.1947 32.4599 40.2048 31.0382C40.3332 28.6732 40.3332 27.9765 40.3332 21.9998C40.3332 16.0232 40.3332 15.3265 40.2048 12.9615ZM35.5482 27.6282C35.4893 28.7595 35.2479 29.8739 34.8332 30.9282C34.4773 31.8076 33.9482 32.6065 33.2773 33.2773C32.6065 33.9482 31.8076 34.4773 30.9282 34.8332C29.8639 35.2248 28.7433 35.4415 27.6098 35.4748H16.3898C15.2563 35.4415 14.1357 35.2248 13.0715 34.8332C12.1624 34.4953 11.3413 33.9563 10.6698 33.2565C10.0056 32.5988 9.49255 31.8043 9.1665 30.9282C8.77336 29.8651 8.56262 28.7432 8.54317 27.6098V16.3898C8.56262 15.2565 8.77336 14.1346 9.1665 13.0715C9.50435 12.1624 10.0433 11.3413 10.7432 10.6698C11.4038 10.0091 12.1975 9.49668 13.0715 9.1665C14.1357 8.77491 15.2563 8.55822 16.3898 8.52484H27.6098C28.7433 8.55822 29.8639 8.77491 30.9282 9.1665C31.8373 9.50435 32.6583 10.0433 33.3298 10.7432C33.9941 11.4009 34.5071 12.1954 34.8332 13.0715C35.2248 14.1357 35.4415 15.2563 35.4748 16.3898V21.9998C35.4748 25.7765 35.6032 26.1615 35.5482 27.6098V27.6282ZM32.6148 13.9882C32.3966 13.396 32.0524 12.8582 31.6061 12.4119C31.1598 11.9656 30.622 11.6215 30.0298 11.4032C29.2167 11.1213 28.3603 10.9848 27.4998 10.9998H16.4998C15.635 11.0083 14.7785 11.1697 13.9698 11.4765C13.3867 11.6849 12.8546 12.015 12.4089 12.4449C11.9632 12.8748 11.6141 13.3946 11.3848 13.9698C11.1186 14.7863 10.9885 15.6411 10.9998 16.4998V27.4998C11.018 28.3637 11.1791 29.2186 11.4765 30.0298C11.6948 30.622 12.0389 31.1598 12.4852 31.6061C12.9315 32.0524 13.4693 32.3966 14.0615 32.6148C14.8437 32.9025 15.6669 33.0634 16.4998 33.0915H27.4998C28.3647 33.083 29.2212 32.9217 30.0298 32.6148C30.622 32.3966 31.1598 32.0524 31.6061 31.6061C32.0524 31.1598 32.3966 30.622 32.6148 30.0298C32.9217 29.2212 33.083 28.3647 33.0915 27.4998V16.4998C33.092 15.6341 32.9304 14.776 32.6148 13.9698V13.9882ZM21.9998 29.0032C21.081 29.0032 20.1712 28.8219 19.3226 28.4697C18.4739 28.1175 17.7031 27.6014 17.0542 26.9508C16.4053 26.3003 15.8912 25.5281 15.5413 24.6785C15.1913 23.8289 15.0124 22.9187 15.0148 21.9998C15.0148 20.6139 15.426 19.2592 16.1964 18.1071C16.9667 16.955 18.0616 16.0574 19.3424 15.5279C20.6231 14.9983 22.0322 14.8607 23.3912 15.1324C24.7502 15.4042 25.9981 16.073 26.9768 17.0543C27.9555 18.0355 28.621 19.2851 28.8892 20.6448C29.1573 22.0045 29.016 23.4133 28.4831 24.6926C27.9503 25.972 27.0498 27.0645 25.8957 27.8318C24.7416 28.5991 23.3857 29.0068 21.9998 29.0032ZM29.3332 16.3715C28.9279 16.3286 28.5528 16.1372 28.2803 15.8343C28.0077 15.5313 27.8569 15.1382 27.8569 14.7307C27.8569 14.3231 28.0077 13.93 28.2803 13.6271C28.5528 13.3241 28.9279 13.1327 29.3332 13.0898C29.7384 13.1327 30.1135 13.3241 30.3861 13.6271C30.6587 13.93 30.8095 14.3231 30.8095 14.7307C30.8095 15.1382 30.6587 15.5313 30.3861 15.8343C30.1135 16.1372 29.7384 16.3286 29.3332 16.3715Z"
+                  fill="#0A437E"
+                />
+              </svg>
+            </a>
+            <a href="#plans"><li class="nav-plans">Тарифи</li></a>
+          </ul>
+        </div>
+      </nav>
+      <header class="header">
+        <h1 class="header-title mobile">СВІТ МЕДИТАЦІЙ</h1>
+        <p class="duration mobile">7-денний курс</p>
+
+        <div class="header-content">
+          <p class="duration">7-денний курс</p>
+          <h1 class="header-title">СВІТ МЕДИТАЦІЙ</h1>
+          <div class="header-description">
+            <p>Трансформуйте своє життя за 7 днів</p>
+            <p>
+              Змістіть точку вашого буття на сприятливу лінію варіантів
+              реальності
+            </p>
+            <a href="#plans" class="nav-link-plans mobile">
+              <span class="plans-title mobile">Тарифи</span>
+            </a>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section id="for-whom" class="for-whom">
+          <h2 class="for-whom-title">Цей курс для тебе, якщо ти:</h2>
+          <div class="reason">
+            <img src="./asstes/img/check-icon.svg" class="check-icon" />
+            <div class="reason-description">
+              <h3 class="reason-title">Маєш внутрішні блоки або травми</h3>
+              <p class="reason-description">
+                ми розробили спеціальну медитацію на зцілення
+              </p>
+            </div>
+          </div>
+          <div class="reason">
+            <img src="./asstes/img/check-icon.svg" class="check-icon" />
+            <div class="reason-description">
+              <h3 class="reason-title">
+                Хочеш навчитись дисципліні та регулярності
+              </h3>
+              <p class="reason-description">
+                на курсі ви слідуєте чіткому таймінгу
+              </p>
+            </div>
+          </div>
+          <div class="reason">
+            <img src="./asstes/img/check-icon.svg" class="check-icon" />
+            <div class="reason-description">
+              <h3 class="reason-title">Потребуєш відпочинку та розслабленню</h3>
+              <p class="reason-description">
+                курс навчить вас медитаціям, які спрямовані на зменшення стресу
+                та віднайти гармонію
+              </p>
+            </div>
+          </div>
+          <div class="reason">
+            <img src="./asstes/img/check-icon.svg" class="check-icon" />
+            <div class="reason-description">
+              <h3 class="reason-title">
+                Не розумієш як залучити енергію грошей
+              </h3>
+              <p class="reason-description">
+                на курсі ми даємо медитацію на пропрацювання фінансового потоку
+              </p>
+            </div>
+          </div>
+          <div class="reason">
+            <img src="./asstes/img/check-icon.svg" class="check-icon" />
+            <div class="reason-description">
+              <h3 class="reason-title">
+                Прагнеш, щоб бажання нарешті почали здійснюватись
+              </h3>
+              <p class="reason-description">
+                на курсі ми даємо медитацію та техніку, яка допомагає в цьому
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="author" id="author">
+          <div class="author-content">
+            <h2 class="author-title">Про автора:</h2>
+            <div class="author-container-1">
+              <p class="author-bio">
+                Привіт, я Дарія. Мені 33 роки і я багатодітна мати. Мені добре
+                відомо, що таке стрес і як він впливає на наш організм та
+                психіку.
+                <br />
+                Я знаю про недоспані ночі, про розчарування, про фізичну і
+                психологічну втому, про відчуття безнадійності, страху,
+                занепокоєння та стагнації.
+              </p>
+
+              <div class="mobile mobile-container-1">
+                <img
+                  class="mobile"
+                  src="./asstes/img/author-1-mobile.png"
+                  alt="author"
+                />
+                <div class="frame-mobile-1"></div>
+              </div>
+            </div>
+
+            <div class="author-bio-container">
+              <div class="bio-container">
+                <img
+                  class="bio-image"
+                  src="./asstes/img/bio_1.png"
+                  alt="mother with kids"
+                />
+                <img
+                  class="mobile mobile-img-2"
+                  src="./asstes/img/author-2-mobile.png"
+                  alt="author"
+                />
+                <div class="mobile-frame-2 mobile"></div>
+                <div class="frame"></div>
+                <p class="bio">
+                  А ще я знаю яким чином вже сьогодні ти зможеш допомогти собі
+                  сам вилізти із всіх цих станів, щоб проживати це життя щасливо
+                  та здоровим. Я навчу тебе моєму улюбленому і найбільш дієвому
+                  методу самозцілення - медитаціі. 
+                </p>
+              </div>
+              <div class="bio-container">
+                <img
+                  class="bio-image"
+                  src="./asstes/img/bio_2.png"
+                  alt="girl in a garden"
+                />
+                <div class="frame"></div>
+                <p class="bio">
+                  Отже, запрошую тебе в цей світ  це мій авторський міні-курс,
+                  який допоможе тобі ознайомитися з цим інструментом та м‘яко і
+                  екологічно зануритися в процеси самозцілення та формування
+                  нової свідомості себе.
+                </p>
+              </div>
+            </div>
+          </div>
+          <img
+            src="./asstes/img/author-photo.png"
+            alt=""
+            class="author-photo"
           />
-        </svg>
-        <svg
-          class="burger-close"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <rect
-            x="1"
-            y="1"
-            width="22"
-            height="22"
-            rx="11"
-            stroke="#0A437E"
-            stroke-width="2"
-          />
-          <path
-            d="M8.13752 8.14922L12.0006 12M12.0006 12L15.8638 15.8507M12.0006 12L15.8514 8.13686M12.0006 12L8.14988 15.8631"
-            stroke="#0A437E"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
-        </svg>
-      </div>
-      <div class="mobile burger-menu">
-        <ul id="menu">
-          <a href="#for-whom"><li>Для кого</li></a>
-          <a href="#author"><li>Про автора</li></a>
-          <a href="#advantages"><li>Переваги</li></a>
-          <a href="#plan"><li>Програма</li></a>
-          <a href="#feedback"><li>Відгуки</li></a>
+        </section>
+
+        <section class="advantages" id="advantages">
+          <div class="advantage">
+            <img
+              src="./asstes/img/lotus.png"
+              alt="lotus"
+              class="advantage-icon"
+            />
+            <h4 class="advantage-title">Доступ назавжди</h4>
+            <p class="advantage-info">
+              Ви матимете довічний доступ до медитацій, щоб мати постійний
+              інструмент допомоги на всі випадки життя
+            </p>
+          </div>
+          <div class="advantage">
+            <img
+              src="./asstes/img/meditation.png"
+              alt="meditation"
+              class="advantage-icon"
+            />
+            <h4 class="advantage-title">7 медитацій</h4>
+            <p class="advantage-info">
+              Кожного дня ви будете отримувати медитацію на роботу з конкретним
+              аспектом вашого життя
+            </p>
+          </div>
+          <div class="advantage">
+            <img
+              src="./asstes/img/headphones.png"
+              alt="headphones"
+              class="advantage-icon"
+            />
+            <h4 class="advantage-title">20 хвилин на день</h4>
+            <p class="advantage-info">
+              Через насиченість нашого життя я вирішила, що не буду забирати
+              багато часу, щоб ви могли легко та швидко побачити зміни
+            </p>
+          </div>
+          <div class="advantage">
+            <img
+              src="./asstes/img/hands.png"
+              alt="hands"
+              class="advantage-icon"
+            />
+            <h4 class="advantage-title">Доступність для всіх</h4>
+            <p class="advantage-info">
+              Курс зрозумілий та є легким для сприйняття, що дає змогу навчатись
+              як досвідченим так і новачкам
+            </p>
+          </div>
+        </section>
+
+        <section class="meditation" id="meditation">
+          <h2 class="meditation-title">Медитуй вже зараз</h2>
+          <p class="meditation-info">
+            <span class="bold">Безкоштовна</span> медитація для тебе, аби
+            впевнитись у
+            <br />
+            правильності вибору
+          </p>
+          <iframe
+            class="meditation-video"
+            width="782"
+            height="440"
+            src="https://www.youtube.com/embed/y6XSRM6lK_I"
+          >
+          </iframe>
+        </section>
+
+        <section class="plan" id="plan">
+          <h2 class="plan-title">Програма курсу:</h2>
+          <p class="plan-subtitle">
+            Курс складається з 7 медитацій, кожна з яких направлена на окремий
+            аспект <br />
+            <span class="plan-subtitle-bold"
+              >внутрішньої роботи та самовдосконалені</span
+            >
+          </p>
+          <div class="plan-content">
+            <div class="bonus-container-mobile mobile">
+              <div class="bonus-frame-mobile"></div>
+              <h3 class="bonus-title">БОНУС</h3>
+              <p class="bonus-info bonus-info-1">
+                Кожного дня ви будете мати
+                <span class="bonus-info-bold">додаткове завдання</span> для
+                закріплення та більш глибокого трансформаційного шляху
+              </p>
+              <div class="mobile-starts">
+                <svg
+                  width="89"
+                  height="25"
+                  viewBox="0 0 89 25"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_321_394)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M7.45817 4.38107C7.12949 3.20627 6.75326 3.20633 6.42457 4.38114L5.3909 10.6613L0.223108 11.9173C-0.679223 12.3452 1.38794 12.7453 2.29027 13.1732L5.3909 14.4292L6.42457 20.6189C6.75326 21.7937 7.12949 21.7937 7.45817 20.6189L8.49169 14.4292L13.6597 12.5452C14.562 12.1173 13.6597 11.9173 11.0757 11.2893L8.49169 10.6613L7.45817 4.38107Z"
+                      fill="#3E8AE0"
+                    />
+                  </g>
+                  <g clip-path="url(#clip1_321_394)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M45.1873 1.22371C44.6942 -0.407963 44.1299 -0.407873 43.6369 1.2238L42.0863 9.94619L34.3347 11.6906C32.9812 12.285 36.0819 12.8407 37.4354 13.4351L42.0863 15.1795L43.6369 23.7762C44.1299 25.4079 44.6942 25.4079 45.1873 23.7762L46.7375 15.1795L54.4895 12.5628C55.843 11.9685 54.4895 11.6906 50.6135 10.8184L46.7375 9.94619L45.1873 1.22371Z"
+                      fill="#3E8AE0"
+                    />
+                  </g>
+                  <g clip-path="url(#clip2_321_394)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M82.4582 4.38107C82.1295 3.20627 81.7533 3.20633 81.4246 4.38114L80.3909 10.6613L75.2231 11.9173C74.3208 12.3452 76.3879 12.7453 77.2903 13.1732L80.3909 14.4292L81.4246 20.6189C81.7533 21.7937 82.1295 21.7937 82.4582 20.6189L83.4917 14.4292L88.6597 12.5452C89.562 12.1173 88.6597 11.9173 86.0757 11.2893L83.4917 10.6613L82.4582 4.38107Z"
+                      fill="#3E8AE0"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_321_394">
+                      <rect
+                        width="14"
+                        height="18"
+                        fill="white"
+                        transform="translate(0 3.5)"
+                      />
+                    </clipPath>
+                    <clipPath id="clip1_321_394">
+                      <rect
+                        width="21"
+                        height="25"
+                        fill="white"
+                        transform="translate(34)"
+                      />
+                    </clipPath>
+                    <clipPath id="clip2_321_394">
+                      <rect
+                        width="14"
+                        height="18"
+                        fill="white"
+                        transform="translate(75 3.5)"
+                      />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+              <p class="bonus-info bonus-info-2">
+                Будуть <span class="bonus-info-bold">прямі ефіри </span>з Дашею,
+                під час яких ви зможете отримати відповіді на питання
+              </p>
+            </div>
+
+            <div class="scroll-container">
+              <div class="mobile-scroll-header mobile">
+                <svg
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M42 25C42 34.4 34.4 42 25 42C15.6 42 8 34.4 8 25C8 15.6 15.6 8 25 8C34.4 8 42 15.6 42 25ZM10 25C10 33.3 16.7 40 25 40C33.3 40 40 33.3 40 25C40 16.7 33.3 10 25 10C16.7 10 10 16.7 10 25Z"
+                    fill="#B6C6D8"
+                  />
+                  <path
+                    d="M26.7001 16.7L18.4001 25L26.7001 33.3L25.3001 34.7L15.6001 25L25.3001 15.2999L26.7001 16.7Z"
+                    fill="#B6C6D8"
+                  />
+                  <path d="M17 26V24H34V26H17Z" fill="#B6C6D8" />
+                </svg>
+                <h3 class="contents">Зміст</h3>
+                <svg
+                  width="50"
+                  height="50"
+                  viewBox="0 0 50 50"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M8 25C8 34.4 15.6 42 25 42C34.4 42 42 34.4 42 25C42 15.6 34.4 8 25 8C15.6 8 8 15.6 8 25ZM40 25C40 33.3 33.3 40 25 40C16.7 40 10 33.3 10 25C10 16.7 16.7 10 25 10C33.3 10 40 16.7 40 25Z"
+                    fill="#B6C6D8"
+                  />
+                  <path
+                    d="M23.2999 16.7L31.5999 25L23.2999 33.3L24.6999 34.7L34.3999 25L24.6999 15.2999L23.2999 16.7Z"
+                    fill="#B6C6D8"
+                  />
+                  <path d="M33 26V24H16V26H33Z" fill="#B6C6D8" />
+                </svg>
+              </div>
+              <button class="plan-scroll-btn">
+                <img src="./asstes/img/icon-up.svg" alt="up" />
+              </button>
+              <div class="scroll-content">
+                <div class="scroll-content-card">
+                  <span class="number">1</span>
+                  <div class="scroll-card-content">
+                    <h3 class="scroll-card-title">
+                      Медитація «Зняття напруги та стресу»
+                    </h3>
+                    <p class="scroll-card-info">
+                      Ця медитація допоможе тобі відчути можливо забуте давно
+                      почуття спокою, релаксу та звільнення.  Твоє тіло та розум
+                      отримає незабутній досвід звільнення від напруги і
+                      повноцінного відпочинку 
+                    </p>
+                  </div>
+                </div>
+                <div class="scroll-content-card">
+                  <span class="number">2</span>
+                  <div class="scroll-card-content">
+                    <h3 class="scroll-card-title">
+                      Медитація «Наповнення та повернення власної енергії» 
+                    </h3>
+                    <p class="scroll-card-info">
+                      Життєва енергія - важливий елемент повноцінного та
+                      гармонійного життя. Це та життєва сила, без якої наше
+                      існування неможливе.
+                      <br />
+                      Дана медитація послужить гарним інструментом насичення,
+                      очищення та повернення цієї сили. Ви навчитесь відчувати
+                      тонкі потоки енергіі і керувати їх рухом всередині.
+                    </p>
+                  </div>
+                </div>
+                <div class="scroll-content-card">
+                  <span class="number">3</span>
+                  <div class="scroll-card-content">
+                    <h3 class="scroll-card-title">
+                      Медитація «Зцілення душі та тіла»
+                    </h3>
+                    <p class="scroll-card-info">
+                      Наші емоції та стани : головні причини як позитивних та і
+                      негативних змін в нашому фізичному тілі. <br />
+                      Дана медитація допоможе тобі віднайти істину серцевину
+                      свого болю і звільнитися від нього. Регулярна практика
+                      цієї медитаціі дозволить повернути здоров‘я та гармонію
+                      всередині та ззовні.
+                    </p>
+                  </div>
+                </div>
+                <div class="scroll-content-card">
+                  <span class="number">4</span>
+                  <div class="scroll-card-content">
+                    <h3 class="scroll-card-title">
+                      Медитація «Налаштування фінансового потоку та звільнення
+                      від блоків» 
+                    </h3>
+                    <p class="scroll-card-info">
+                      Інколи ми самостійно заважаємо собі мати те, що бажаємо.
+                      <br />
+                      Саме ця медитація допоможе звільнитися від негативних
+                      налаштувань та фінансових блоків і допоможе запустити
+                      потужну грошову енергію в свою сторону.
+                    </p>
+                  </div>
+                </div>
+                <div class="scroll-content-card">
+                  <span class="number">5</span>
+                  <div class="scroll-card-content">
+                    <h3 class="scroll-card-title">
+                      Медитація «Гармонізація енергії»
+                    </h3>
+                    <p class="scroll-card-info">
+                      Ця медитація направлена на збалансування та активізацію
+                      енергетичних каналів (чакр), на запуск гармонічного та
+                      вільного потоку енергіі через них, щоб всі сфери вашого
+                      існування були в благосній взаємодії.<br />
+                      Ми відновимо нашу ауру та створимо захисну оболонку, яку
+                      ви можете використовувати в необхідні ситуації вашого
+                      життя. 
+                    </p>
+                  </div>
+                </div>
+                <div class="scroll-content-card">
+                  <span class="number">6</span>
+                  <div class="scroll-card-content">
+                    <h3 class="scroll-card-title">
+                      Медитація «Здійснення бажання»
+                    </h3>
+                    <p class="scroll-card-info">
+                      Інколи для того, що ми дуже сильно бажаємо заважає власний
+                      супротив або зневіра того, що ми дійсно цього гідні.
+                      <br />
+                      Дана медитація допоможе вам приблизитися до реалізації
+                      заповітного бажання шляхом дієвої психологічної техніки,
+                      яка діє безвідказно та стовідсотково.
+                    </p>
+                  </div>
+                </div>
+                <div class="scroll-content-card">
+                  <span class="number">7</span>
+                  <div class="scroll-card-content">
+                    <h3 class="scroll-card-title">
+                      Медитація «Нова особистість»
+                    </h3>
+                    <p class="scroll-card-info">
+                      Щоб побудувати щось нове інколи необхідно попрощатися зі
+                      старим. <br />
+                      Дана медитація використовує техніку візуалізації та
+                      проживання нового досвіду бажаної вами особистості: нові
+                      звички, новий вигляд, нові ідеї та цінності. <br />Ми
+                      сформуємо нові нейронні зв‘язки і запустимо зміни, які не
+                      заставлять на себе чекати.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <button class="plan-scroll-btn">
+                <img src="./asstes/img/icon-down.svg" alt="down" />
+              </button>
+            </div>
+            <div class="bonus-container">
+              <div class="frame-small">
+                <svg
+                  class="star-1"
+                  width="19"
+                  height="20"
+                  viewBox="0 0 19 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.1218 0.978967C9.67573 -0.326371 9.16514 -0.326298 8.71906 0.97904L7.31622 7.95695L0.30279 9.3525C-0.921802 9.82799 1.88363 10.2726 3.10822 10.7481L7.31622 12.1436L8.71906 19.021C9.16514 20.3263 9.67573 20.3263 10.1218 19.021L11.5244 12.1436L18.5381 10.0503C19.7627 9.57479 18.5381 9.3525 15.0313 8.65473L11.5244 7.95695L10.1218 0.978967Z"
+                    fill="#0A437E"
+                  />
+                </svg>
+              </div>
+              <div class="frame-big">
+                <svg
+                  class="star-big"
+                  width="37"
+                  height="43"
+                  viewBox="0 0 37 43"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_62_379)">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M19.7109 2.10478C18.8422 -0.701697 17.8479 -0.701542 16.9792 2.10493L14.2474 17.1074L0.589643 20.1079C-1.79509 21.1302 3.66812 22.086 6.05285 23.1083L14.2474 26.1087L16.9792 40.8951C17.8479 43.7016 18.8422 43.7016 19.7109 40.8951L22.4423 26.1087L36.1006 21.6081C38.4853 20.5858 36.1006 20.1079 29.2715 18.6077L22.4423 17.1074L19.7109 2.10478Z"
+                      fill="#0A437E"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_62_379">
+                      <rect width="37" height="43" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <svg
+                  class="star-2"
+                  width="19"
+                  height="20"
+                  viewBox="0 0 19 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M10.1218 0.978967C9.67573 -0.326371 9.16514 -0.326298 8.71906 0.97904L7.31622 7.95695L0.30279 9.3525C-0.921802 9.82799 1.88363 10.2726 3.10822 10.7481L7.31622 12.1436L8.71906 19.021C9.16514 20.3263 9.67573 20.3263 10.1218 19.021L11.5244 12.1436L18.5381 10.0503C19.7627 9.57479 18.5381 9.3525 15.0313 8.65473L11.5244 7.95695L10.1218 0.978967Z"
+                    fill="#0A437E"
+                  />
+                </svg>
+                <h3 class="bonus-title">БОНУС</h3>
+                <p class="bonus-info bonus-info-1">
+                  Кожного дня ви будете мати
+                  <span class="bonus-info-bold">додаткове завдання</span> для
+                  закріплення та більш глибокого трансформаційного шляху
+                </p>
+                <p class="bonus-info bonus-info-2">
+                  Будуть <span class="bonus-info-bold">прямі ефіри </span>з
+                  Дашею, під час яких ви зможете отримати відповіді на питання
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="plans" class="plans">
+          <div class="mobile-scroll-header mobile">
+            <svg
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M42 25C42 34.4 34.4 42 25 42C15.6 42 8 34.4 8 25C8 15.6 15.6 8 25 8C34.4 8 42 15.6 42 25ZM10 25C10 33.3 16.7 40 25 40C33.3 40 40 33.3 40 25C40 16.7 33.3 10 25 10C16.7 10 10 16.7 10 25Z"
+                fill="#B6C6D8"
+              />
+              <path
+                d="M26.7001 16.7L18.4001 25L26.7001 33.3L25.3001 34.7L15.6001 25L25.3001 15.2999L26.7001 16.7Z"
+                fill="#B6C6D8"
+              />
+              <path d="M17 26V24H34V26H17Z" fill="#B6C6D8" />
+            </svg>
+            <h3 class="contents">Тарифи</h3>
+            <svg
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 25C8 34.4 15.6 42 25 42C34.4 42 42 34.4 42 25C42 15.6 34.4 8 25 8C15.6 8 8 15.6 8 25ZM40 25C40 33.3 33.3 40 25 40C16.7 40 10 33.3 10 25C10 16.7 16.7 10 25 10C33.3 10 40 16.7 40 25Z"
+                fill="#B6C6D8"
+              />
+              <path
+                d="M23.2999 16.7L31.5999 25L23.2999 33.3L24.6999 34.7L34.3999 25L24.6999 15.2999L23.2999 16.7Z"
+                fill="#B6C6D8"
+              />
+              <path d="M33 26V24H16V26H33Z" fill="#B6C6D8" />
+            </svg>
+          </div>
+          <div class="tariffs-scroll-container">
+            <div class="tariff">
+              <h3 class="tariff-title">Базовий</h3>
+              <span class="tariff-for-whom">
+                Теорія медитації: <br />
+                що це і для кого?
+              </span>
+              <ul class="details-list">
+                <li class="tariff-detail">7 медитацій українською мовою</li>
+                <li class="tariff-detail">
+                  Додаткові вправи та інформація для поглибленого усвідомлення
+                  та практичного закріплення нових навичок
+                </li>
+              </ul>
+              <div class="tariff-additional">
+                <svg
+                  class="tariff-additional-icon"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 35 38"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2.8335 18.1665V32.8332C2.8335 33.8056 3.2198 34.7383 3.90744 35.4259C4.59507 36.1135 5.5277 36.4998 6.50016 36.4998H28.5002C29.4726 36.4998 30.4053 36.1135 31.0929 35.4259C31.7805 34.7383 32.1668 33.8056 32.1668 32.8332V18.1665"
+                    stroke="#B6C6D8"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.5 8.08317C17.5 6.38136 16.824 4.74926 15.6206 3.5459C14.4172 2.34254 12.7851 1.6665 11.0833 1.6665C9.86776 1.6665 8.70197 2.14939 7.84243 3.00893C6.98289 3.86847 6.5 5.03426 6.5 6.24984C6.5 7.46541 6.98289 8.6312 7.84243 9.49074C8.70197 10.3503 9.86776 10.8332 11.0833 10.8332H17.5M17.5 8.08317V10.8332M17.5 8.08317C17.5 6.38136 18.176 4.74926 19.3794 3.5459C20.5828 2.34254 22.2149 1.6665 23.9167 1.6665C25.1322 1.6665 26.298 2.14939 27.1576 3.00893C28.0171 3.86847 28.5 5.03426 28.5 6.24984C28.5 6.85173 28.3814 7.44773 28.1511 8.0038C27.9208 8.55988 27.5832 9.06514 27.1576 9.49074C26.732 9.91635 26.2267 10.254 25.6706 10.4843C25.1146 10.7146 24.5186 10.8332 23.9167 10.8332H17.5"
+                    stroke="#B6C6D8"
+                    stroke-width="2"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M17.5 18.1663V36.4997M1 10.833H34V18.1663H1V10.833Z"
+                    stroke="#B6C6D8"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p class="tariff-additional-text">
+                  Практика дихання для заспокоєння та рівноваги 
+                </p>
+              </div>
+              <span class="tariff-price">888 грн</span>
+              <a
+                href="https://t.me/Supp0rt_servis"
+                target="_blank"
+                class="to-telegram"
+                >Медитувати</a
+              >
+            </div>
+            <div class="tariff">
+              <h3 class="tariff-title">Персональний</h3>
+              <span class="tariff-for-whom">
+                Теорія медитації: <br />
+                що це і для кого?
+              </span>
+              <ul class="details-list">
+                <li class="tariff-detail">7 медитацій українською мовою</li>
+                <li class="tariff-detail">
+                  Додаткові вправи та інформація для поглибленого усвідомлення
+                  та практичного закріплення нових навичок
+                </li>
+                <li class="tariff-detail">
+                  Подарунок - практика дихання для заспокоєння та рівноваги 
+                </li>
+              </ul>
+              <div class="tariff-additional">
+                <svg
+                  class="plus"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 44 44"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="1"
+                    y="1"
+                    width="42"
+                    height="42"
+                    rx="21"
+                    stroke="#B6C6D8"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M12 22H22M22 22H32M22 22V12M22 22V32"
+                    stroke="#B6C6D8"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p class="tariff-additional-text">
+                  Загальний зідзвон зі мною, де будемо розбирати 1 важливу тему,
+                  вибрану загальним голосуванням
+                </p>
+              </div>
+              <div class="tariff-additional">
+                <svg
+                  class="plus"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 44 44"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="1"
+                    y="1"
+                    width="42"
+                    height="42"
+                    rx="21"
+                    stroke="#B6C6D8"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M12 22H22M22 22H32M22 22V12M22 22V32"
+                    stroke="#B6C6D8"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p class="tariff-additional-text">
+                  Загальний зідзвон, де будемо розбирати запити кожного з
+                  учасників
+                </p>
+              </div>
+              <span class="tariff-price">2222 грн</span>
+              <a
+                target="_blank"
+                href="https://t.me/Supp0rt_servis"
+                class="to-telegram"
+                >Медитувати</a
+              >
+            </div>
+            <div class="tariff">
+              <h3 class="tariff-title">Стандарт</h3>
+              <span class="tariff-for-whom">
+                Теорія медитації: <br />
+                що це і для кого?
+              </span>
+              <ul class="details-list">
+                <li class="tariff-detail">7 медитацій українською мовою</li>
+                <li class="tariff-detail">
+                  Додаткові вправи та інформація для поглибленого усвідомлення
+                  та практичного закріплення нових навичок
+                </li>
+                <li class="tariff-detail">
+                  Подарунок - практика дихання для заспокоєння та рівноваги 
+                </li>
+              </ul>
+              <div class="tariff-additional">
+                <svg
+                  class="plus"
+                  width="44"
+                  height="44"
+                  viewBox="0 0 44 44"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="1"
+                    y="1"
+                    width="42"
+                    height="42"
+                    rx="21"
+                    stroke="#B6C6D8"
+                    stroke-width="2"
+                  />
+                  <path
+                    d="M12 22H22M22 22H32M22 22V12M22 22V32"
+                    stroke="#B6C6D8"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                <p class="tariff-additional-text">
+                  Загальний зідзвон зі мною, де будемо розбирати 1 важливу тему,
+                  вибрану загальним голосуванням
+                </p>
+              </div>
+              <span class="tariff-price">1111 грн</span>
+              <a
+                target="_blank"
+                href="https://t.me/Supp0rt_servis"
+                class="to-telegram"
+                >Медитувати</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section id="feedback" class="feedback">
+          <div class="mobile-scroll-header mobile">
+            <svg
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M42 25C42 34.4 34.4 42 25 42C15.6 42 8 34.4 8 25C8 15.6 15.6 8 25 8C34.4 8 42 15.6 42 25ZM10 25C10 33.3 16.7 40 25 40C33.3 40 40 33.3 40 25C40 16.7 33.3 10 25 10C16.7 10 10 16.7 10 25Z"
+                fill="#B6C6D8"
+              />
+              <path
+                d="M26.7001 16.7L18.4001 25L26.7001 33.3L25.3001 34.7L15.6001 25L25.3001 15.2999L26.7001 16.7Z"
+                fill="#B6C6D8"
+              />
+              <path d="M17 26V24H34V26H17Z" fill="#B6C6D8" />
+            </svg>
+            <h3 class="contents">Відгуки</h3>
+            <svg
+              width="50"
+              height="50"
+              viewBox="0 0 50 50"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 25C8 34.4 15.6 42 25 42C34.4 42 42 34.4 42 25C42 15.6 34.4 8 25 8C15.6 8 8 15.6 8 25ZM40 25C40 33.3 33.3 40 25 40C16.7 40 10 33.3 10 25C10 16.7 16.7 10 25 10C33.3 10 40 16.7 40 25Z"
+                fill="#B6C6D8"
+              />
+              <path
+                d="M23.2999 16.7L31.5999 25L23.2999 33.3L24.6999 34.7L34.3999 25L24.6999 15.2999L23.2999 16.7Z"
+                fill="#B6C6D8"
+              />
+              <path d="M33 26V24H16V26H33Z" fill="#B6C6D8" />
+            </svg>
+          </div>
+          <h2 class="feedback-title">Відгуки:</h2>
+          <div class="feedback-scroll-container">
+            <svg
+              class="arrow-left"
+              width="50"
+              height="51"
+              viewBox="0 0 50 51"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M42 25.5C42 34.9 34.4 42.5 25 42.5C15.6 42.5 8 34.9 8 25.5C8 16.1 15.6 8.5 25 8.5C34.4 8.5 42 16.1 42 25.5ZM10 25.5C10 33.8 16.7 40.5 25 40.5C33.3 40.5 40 33.8 40 25.5C40 17.2 33.3 10.5 25 10.5C16.7 10.5 10 17.2 10 25.5Z"
+                fill="#B6C6D8"
+              />
+              <path
+                d="M26.7001 17.2002L18.4001 25.5002L26.7001 33.8002L25.3001 35.2002L15.6001 25.5002L25.3001 15.8002L26.7001 17.2002Z"
+                fill="#B6C6D8"
+              />
+              <path d="M17 26.5V24.5H34V26.5H17Z" fill="#B6C6D8" />
+            </svg>
+            <div class="feedback-scroll">
+              <div class="feedback-card">
+                <img
+                  src="./asstes/img/anna.png"
+                  alt="avatar"
+                  class="feedback-photo"
+                />
+                <div class="feedback-content">
+                  <h4 class="feedback-name">Анна</h4>
+                  <p class="feedback-text">
+                    Даша, у мене зараз не дуже добре з вираженням думок, але з
+                    перших секунд я повністю поринула в якесь тепле та світле
+                    місце, це була справжня магія! Я практикую медитацію, але це
+                    було щось особливе! У твоєму голосі було стільки кохання та
+                    турботи! Дякую тобі!
+                  </p>
+                </div>
+              </div>
+              <div class="feedback-card">
+                <img
+                  src="./asstes/img/masha.jpg"
+                  alt="avatar"
+                  class="feedback-photo"
+                />
+                <div class="feedback-content">
+                  <h4 class="feedback-name">Маша</h4>
+                  <p class="feedback-text">
+                    Мені дуже сподобалося. Просто приголомшлива енергія. Ти
+                    розумничка. Таке приємне поєднання голосу та музики. Я
+                    концентрувалася та розслаблялася одночасно. Дякую тобі!
+                  </p>
+                </div>
+              </div>
+              <div class="feedback-card">
+                <img
+                  src="./asstes/img/anastasia.jpg"
+                  alt="avatar"
+                  class="feedback-photo"
+                />
+                <div class="feedback-content">
+                  <h4 class="feedback-name">Анастасія</h4>
+                  <p class="feedback-text">
+                    Максимальне розслаблення. Відчуття ніби дійсно тіло
+                    з’єдналось з навколишнім середовищем і на якийсь момент була
+                    лиш енергія і більше нічого, ніяких думок, переживань,
+                    просто момент і тотальний спокій. Дякую!
+                  </p>
+                </div>
+              </div>
+              <div class="feedback-card">
+                <img
+                  src="./asstes/img/yulia.jpg"
+                  alt="avatar"
+                  class="feedback-photo"
+                />
+                <div class="feedback-content">
+                  <h4 class="feedback-name">Юлія</h4>
+                  <p class="feedback-text">
+                    Я твої медитації на заспокоєння та зняття стресу слухаю, бо
+                    лише це мені трохи надає сил, я хоча б вночі не плачу. Вони
+                    мені дуже сильно допомагають. Вдячна тобі за це !
+                  </p>
+                </div>
+              </div>
+            </div>
+            <svg
+              class="arrow-right"
+              width="50"
+              height="51"
+              viewBox="0 0 50 51"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M8 25.5C8 34.9 15.6 42.5 25 42.5C34.4 42.5 42 34.9 42 25.5C42 16.1 34.4 8.5 25 8.5C15.6 8.5 8 16.1 8 25.5ZM40 25.5C40 33.8 33.3 40.5 25 40.5C16.7 40.5 10 33.8 10 25.5C10 17.2 16.7 10.5 25 10.5C33.3 10.5 40 17.2 40 25.5Z"
+                fill="#B6C6D8"
+              />
+              <path
+                d="M23.2999 17.2002L31.5999 25.5002L23.2999 33.8002L24.6999 35.2002L34.3999 25.5002L24.6999 15.8002L23.2999 17.2002Z"
+                fill="#B6C6D8"
+              />
+              <path d="M33 26.5V24.5H16V26.5H33Z" fill="#B6C6D8" />
+            </svg>
+          </div>
+        </section>
+
+        <section class="conclusion">
+          <div class="conclusion-icon-content">
+            <svg
+              class="conclusion-icon"
+              width="80"
+              height="80"
+              viewBox="0 0 80 80"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <rect width="80" height="80" fill="url(#pattern0_78_1602)" />
+              <defs>
+                <pattern
+                  id="pattern0_78_1602"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use
+                    xlink:href="#image0_78_1602"
+                    transform="scale(0.00195312)"
+                  />
+                </pattern>
+                <image
+                  id="image0_78_1602"
+                  width="512"
+                  height="512"
+                  xlink:href="data:image/png;base64,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"
+                />
+              </defs>
+            </svg>
+          </div>
+          <p class="conclusion-text">
+            Почни змінювати
+            <span class="conclusion-bold">себе і світ</span> навколо<br />
+            <br />Зроби перший крок до своєї трансформації та внутрішної
+            <span class="conclusion-bold">гармонії</span><br />
+            <br />Не пропусти <span class="conclusion-bold">шанс</span> змінити
+            своє життя на краще
+          </p>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="footer-links">
+          <a href="" class="footer-link">Головна</a>
+          <a href="#for-whom" class="footer-link">Для кого</a>
+          <a href="#author" class="footer-link">Про автора</a>
+          <a href="#advantages" class="footer-link">Переваги</a>
+        </div>
+        <div class="footer-links">
+          <a href="#plan" class="footer-link">Програма</a>
+          <a href="#feedback" class="footer-link">Відгуки</a>
+          <a href="#meditation" class="footer-link">Безкоштовна медитація</a>
+          <a href="#plans" class="footer-link">Тарифи</a>
+        </div>
+        <div class="footer-links">
+          <p class="footer-link footer-header">Контакти</p>
+          <a href="tel:+380636862811" class="footer-link">+380 63 686 28 11</a>
           <a
             href="https://www.instagram.com/daruyusvitlo?igsh=MWljdTB6M21iaHFrNQ=="
             class="footer-link"
@@ -93,992 +1083,15 @@
               />
             </svg>
           </a>
-          <a href="#plans"><li class="nav-plans">Тарифи</li></a>
-        </ul>
-      </div>
-    </nav>
-    <header class="header">
-      <h1 class="header-title mobile">СВІТ МЕДИТАЦІЙ</h1>
-      <p class="duration mobile">7-денний курс</p>
-
-      <div class="header-content">
-        <p class="duration">7-денний курс</p>
-        <h1 class="header-title">СВІТ МЕДИТАЦІЙ</h1>
-        <div class="header-description">
-          <p>Трансформуйте своє життя за 7 днів</p>
-          <p>
-            Змістіть точку вашого буття на сприятливу лінію варіантів реальності
-          </p>
-          <a href="#plans" class="nav-link-plans mobile">
-            <span class="plans-title mobile">Тарифи</span>
+        </div>
+        <div class="footer-links">
+          <p class="footer-link footer-header">E-mail</p>
+          <a href="mailto:Rockettta@gmail.com " class="footer-link"
+            >Rockettta@gmail.com
           </a>
         </div>
-      </div>
-    </header>
-    <main>
-      <section id="for-whom" class="for-whom">
-        <h2 class="for-whom-title">Цей курс для тебе, якщо ти:</h2>
-        <div class="reason">
-          <img src="./asstes/img/check-icon.svg" class="check-icon" />
-          <div class="reason-description">
-            <h3 class="reason-title">Маєш внутрішні блоки або травми</h3>
-            <p class="reason-description">
-              ми розробили спеціальну медитацію на зцілення
-            </p>
-          </div>
-        </div>
-        <div class="reason">
-          <img src="./asstes/img/check-icon.svg" class="check-icon" />
-          <div class="reason-description">
-            <h3 class="reason-title">
-              Хочеш навчитись дисципліні та регулярності
-            </h3>
-            <p class="reason-description">
-              на курсі ви слідуєте чіткому таймінгу
-            </p>
-          </div>
-        </div>
-        <div class="reason">
-          <img src="./asstes/img/check-icon.svg" class="check-icon" />
-          <div class="reason-description">
-            <h3 class="reason-title">Потребуєш відпочинку та розслабленню</h3>
-            <p class="reason-description">
-              курс навчить вас медитаціям, які спрямовані на зменшення стресу та
-              віднайти гармонію
-            </p>
-          </div>
-        </div>
-        <div class="reason">
-          <img src="./asstes/img/check-icon.svg" class="check-icon" />
-          <div class="reason-description">
-            <h3 class="reason-title">Не розумієш як залучити енергію грошей</h3>
-            <p class="reason-description">
-              на курсі ми даємо медитацію на пропрацювання фінансового потоку
-            </p>
-          </div>
-        </div>
-        <div class="reason">
-          <img src="./asstes/img/check-icon.svg" class="check-icon" />
-          <div class="reason-description">
-            <h3 class="reason-title">
-              Прагнеш, щоб бажання нарешті почали здійснюватись
-            </h3>
-            <p class="reason-description">
-              на курсі ми даємо медитацію та техніку, яка допомагає в цьому
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section class="author" id="author">
-        <div class="author-content">
-          <h2 class="author-title">Про автора:</h2>
-          <div class="author-container-1">
-            <p class="author-bio">
-              Привіт, я Дарія. Мені 33 роки і я багатодітна мати. Мені добре
-              відомо, що таке стрес і як він впливає на наш організм та психіку.
-              <br />
-              Я знаю про недоспані ночі, про розчарування, про фізичну і
-              психологічну втому, про відчуття безнадійності, страху,
-              занепокоєння та стагнації.
-            </p>
-
-            <div class="mobile mobile-container-1">
-              <img
-                class="mobile"
-                src="./asstes/img/author-1-mobile.png"
-                alt="author"
-              />
-              <div class="frame-mobile-1"></div>
-            </div>
-          </div>
-
-          <div class="author-bio-container">
-            <div class="bio-container">
-              <img
-                class="bio-image"
-                src="./asstes/img/bio_1.png"
-                alt="mother with kids"
-              />
-              <img
-                class="mobile mobile-img-2"
-                src="./asstes/img/author-2-mobile.png"
-                alt="author"
-              />
-              <div class="mobile-frame-2 mobile"></div>
-              <div class="frame"></div>
-              <p class="bio">
-                А ще я знаю яким чином вже сьогодні ти зможеш допомогти собі сам
-                вилізти із всіх цих станів, щоб проживати це життя щасливо та
-                здоровим. Я навчу тебе моєму улюбленому і найбільш дієвому
-                методу самозцілення - медитаціі. 
-              </p>
-            </div>
-            <div class="bio-container">
-              <img
-                class="bio-image"
-                src="./asstes/img/bio_2.png"
-                alt="girl in a garden"
-              />
-              <div class="frame"></div>
-              <p class="bio">
-                Отже, запрошую тебе в цей світ  це мій авторський міні-курс,
-                який допоможе тобі ознайомитися з цим інструментом та м‘яко і
-                екологічно зануритися в процеси самозцілення та формування нової
-                свідомості себе.
-              </p>
-            </div>
-          </div>
-        </div>
-        <img src="./asstes/img/author-photo.png" alt="" class="author-photo" />
-      </section>
-
-      <section class="advantages" id="advantages">
-        <div class="advantage">
-          <img
-            src="./asstes/img/lotus.png"
-            alt="lotus"
-            class="advantage-icon"
-          />
-          <h4 class="advantage-title">Доступ назавжди</h4>
-          <p class="advantage-info">
-            Ви матимете довічний доступ до медитацій, щоб мати постійний
-            інструмент допомоги на всі випадки життя
-          </p>
-        </div>
-        <div class="advantage">
-          <img
-            src="./asstes/img/meditation.png"
-            alt="meditation"
-            class="advantage-icon"
-          />
-          <h4 class="advantage-title">7 медитацій</h4>
-          <p class="advantage-info">
-            Кожного дня ви будете отримувати медитацію на роботу з конкретним
-            аспектом вашого життя
-          </p>
-        </div>
-        <div class="advantage">
-          <img
-            src="./asstes/img/headphones.png"
-            alt="headphones"
-            class="advantage-icon"
-          />
-          <h4 class="advantage-title">20 хвилин на день</h4>
-          <p class="advantage-info">
-            Через насиченість нашого життя я вирішила, що не буду забирати
-            багато часу, щоб ви могли легко та швидко побачити зміни
-          </p>
-        </div>
-        <div class="advantage">
-          <img
-            src="./asstes/img/hands.png"
-            alt="hands"
-            class="advantage-icon"
-          />
-          <h4 class="advantage-title">Доступність для всіх</h4>
-          <p class="advantage-info">
-            Курс зрозумілий та є легким для сприйняття, що дає змогу навчатись
-            як досвідченим так і новачкам
-          </p>
-        </div>
-      </section>
-
-      <section class="meditation" id="meditation">
-        <h2 class="meditation-title">Медитуй вже зараз</h2>
-        <p class="meditation-info">
-          <span class="bold">Безкоштовна</span> медитація для тебе, аби
-          впевнитись у
-          <br />
-          правильності вибору
-        </p>
-        <iframe
-          class="meditation-video"
-          width="782"
-          height="440"
-          src="https://www.youtube.com/embed/y6XSRM6lK_I"
-        >
-        </iframe>
-      </section>
-
-      <section class="plan" id="plan">
-        <h2 class="plan-title">Програма курсу:</h2>
-        <p class="plan-subtitle">
-          Курс складається з 7 медитацій, кожна з яких направлена на окремий
-          аспект <br />
-          <span class="plan-subtitle-bold"
-            >внутрішньої роботи та самовдосконалені</span
-          >
-        </p>
-        <div class="plan-content">
-          <div class="bonus-container-mobile mobile">
-            <div class="bonus-frame-mobile"></div>
-            <h3 class="bonus-title">БОНУС</h3>
-            <p class="bonus-info bonus-info-1">
-              Кожного дня ви будете мати
-              <span class="bonus-info-bold">додаткове завдання</span> для
-              закріплення та більш глибокого трансформаційного шляху
-            </p>
-            <div class="mobile-starts">
-              <svg
-                width="89"
-                height="25"
-                viewBox="0 0 89 25"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_321_394)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M7.45817 4.38107C7.12949 3.20627 6.75326 3.20633 6.42457 4.38114L5.3909 10.6613L0.223108 11.9173C-0.679223 12.3452 1.38794 12.7453 2.29027 13.1732L5.3909 14.4292L6.42457 20.6189C6.75326 21.7937 7.12949 21.7937 7.45817 20.6189L8.49169 14.4292L13.6597 12.5452C14.562 12.1173 13.6597 11.9173 11.0757 11.2893L8.49169 10.6613L7.45817 4.38107Z"
-                    fill="#3E8AE0"
-                  />
-                </g>
-                <g clip-path="url(#clip1_321_394)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M45.1873 1.22371C44.6942 -0.407963 44.1299 -0.407873 43.6369 1.2238L42.0863 9.94619L34.3347 11.6906C32.9812 12.285 36.0819 12.8407 37.4354 13.4351L42.0863 15.1795L43.6369 23.7762C44.1299 25.4079 44.6942 25.4079 45.1873 23.7762L46.7375 15.1795L54.4895 12.5628C55.843 11.9685 54.4895 11.6906 50.6135 10.8184L46.7375 9.94619L45.1873 1.22371Z"
-                    fill="#3E8AE0"
-                  />
-                </g>
-                <g clip-path="url(#clip2_321_394)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M82.4582 4.38107C82.1295 3.20627 81.7533 3.20633 81.4246 4.38114L80.3909 10.6613L75.2231 11.9173C74.3208 12.3452 76.3879 12.7453 77.2903 13.1732L80.3909 14.4292L81.4246 20.6189C81.7533 21.7937 82.1295 21.7937 82.4582 20.6189L83.4917 14.4292L88.6597 12.5452C89.562 12.1173 88.6597 11.9173 86.0757 11.2893L83.4917 10.6613L82.4582 4.38107Z"
-                    fill="#3E8AE0"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_321_394">
-                    <rect
-                      width="14"
-                      height="18"
-                      fill="white"
-                      transform="translate(0 3.5)"
-                    />
-                  </clipPath>
-                  <clipPath id="clip1_321_394">
-                    <rect
-                      width="21"
-                      height="25"
-                      fill="white"
-                      transform="translate(34)"
-                    />
-                  </clipPath>
-                  <clipPath id="clip2_321_394">
-                    <rect
-                      width="14"
-                      height="18"
-                      fill="white"
-                      transform="translate(75 3.5)"
-                    />
-                  </clipPath>
-                </defs>
-              </svg>
-            </div>
-            <p class="bonus-info bonus-info-2">
-              Будуть <span class="bonus-info-bold">прямі ефіри </span>з Дашею,
-              під час яких ви зможете отримати відповіді на питання
-            </p>
-          </div>
-
-          <div class="scroll-container">
-            <div class="mobile-scroll-header mobile">
-              <svg
-                width="50"
-                height="50"
-                viewBox="0 0 50 50"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M42 25C42 34.4 34.4 42 25 42C15.6 42 8 34.4 8 25C8 15.6 15.6 8 25 8C34.4 8 42 15.6 42 25ZM10 25C10 33.3 16.7 40 25 40C33.3 40 40 33.3 40 25C40 16.7 33.3 10 25 10C16.7 10 10 16.7 10 25Z"
-                  fill="#B6C6D8"
-                />
-                <path
-                  d="M26.7001 16.7L18.4001 25L26.7001 33.3L25.3001 34.7L15.6001 25L25.3001 15.2999L26.7001 16.7Z"
-                  fill="#B6C6D8"
-                />
-                <path d="M17 26V24H34V26H17Z" fill="#B6C6D8" />
-              </svg>
-              <h3 class="contents">Зміст</h3>
-              <svg
-                width="50"
-                height="50"
-                viewBox="0 0 50 50"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M8 25C8 34.4 15.6 42 25 42C34.4 42 42 34.4 42 25C42 15.6 34.4 8 25 8C15.6 8 8 15.6 8 25ZM40 25C40 33.3 33.3 40 25 40C16.7 40 10 33.3 10 25C10 16.7 16.7 10 25 10C33.3 10 40 16.7 40 25Z"
-                  fill="#B6C6D8"
-                />
-                <path
-                  d="M23.2999 16.7L31.5999 25L23.2999 33.3L24.6999 34.7L34.3999 25L24.6999 15.2999L23.2999 16.7Z"
-                  fill="#B6C6D8"
-                />
-                <path d="M33 26V24H16V26H33Z" fill="#B6C6D8" />
-              </svg>
-            </div>
-            <button class="plan-scroll-btn">
-              <img src="./asstes/img/icon-up.svg" alt="up" />
-            </button>
-            <div class="scroll-content">
-              <div class="scroll-content-card">
-                <span class="number">1</span>
-                <div class="scroll-card-content">
-                  <h3 class="scroll-card-title">
-                    Медитація «Зняття напруги та стресу»
-                  </h3>
-                  <p class="scroll-card-info">
-                    Ця медитація допоможе тобі відчути можливо забуте давно
-                    почуття спокою, релаксу та звільнення.  Твоє тіло та розум
-                    отримає незабутній досвід звільнення від напруги і
-                    повноцінного відпочинку 
-                  </p>
-                </div>
-              </div>
-              <div class="scroll-content-card">
-                <span class="number">2</span>
-                <div class="scroll-card-content">
-                  <h3 class="scroll-card-title">
-                    Медитація «Наповнення та повернення власної енергії» 
-                  </h3>
-                  <p class="scroll-card-info">
-                    Життєва енергія - важливий елемент повноцінного та
-                    гармонійного життя. Це та життєва сила, без якої наше
-                    існування неможливе.
-                    <br />
-                    Дана медитація послужить гарним інструментом насичення,
-                    очищення та повернення цієї сили. Ви навчитесь відчувати
-                    тонкі потоки енергіі і керувати їх рухом всередині.
-                  </p>
-                </div>
-              </div>
-              <div class="scroll-content-card">
-                <span class="number">3</span>
-                <div class="scroll-card-content">
-                  <h3 class="scroll-card-title">
-                    Медитація «Зцілення душі та тіла»
-                  </h3>
-                  <p class="scroll-card-info">
-                    Наші емоції та стани : головні причини як позитивних та і
-                    негативних змін в нашому фізичному тілі. <br />
-                    Дана медитація допоможе тобі віднайти істину серцевину свого
-                    болю і звільнитися від нього. Регулярна практика цієї
-                    медитаціі дозволить повернути здоров‘я та гармонію всередині
-                    та ззовні.
-                  </p>
-                </div>
-              </div>
-              <div class="scroll-content-card">
-                <span class="number">4</span>
-                <div class="scroll-card-content">
-                  <h3 class="scroll-card-title">
-                    Медитація «Налаштування фінансового потоку та звільнення від
-                    блоків» 
-                  </h3>
-                  <p class="scroll-card-info">
-                    Інколи ми самостійно заважаємо собі мати те, що бажаємо.
-                    <br />
-                    Саме ця медитація допоможе звільнитися від негативних
-                    налаштувань та фінансових блоків і допоможе запустити
-                    потужну грошову енергію в свою сторону.
-                  </p>
-                </div>
-              </div>
-              <div class="scroll-content-card">
-                <span class="number">5</span>
-                <div class="scroll-card-content">
-                  <h3 class="scroll-card-title">
-                    Медитація «Гармонізація енергії»
-                  </h3>
-                  <p class="scroll-card-info">
-                    Ця медитація направлена на збалансування та активізацію
-                    енергетичних каналів (чакр), на запуск гармонічного та
-                    вільного потоку енергіі через них, щоб всі сфери вашого
-                    існування були в благосній взаємодії.<br />
-                    Ми відновимо нашу ауру та створимо захисну оболонку, яку ви
-                    можете використовувати в необхідні ситуації вашого життя. 
-                  </p>
-                </div>
-              </div>
-              <div class="scroll-content-card">
-                <span class="number">6</span>
-                <div class="scroll-card-content">
-                  <h3 class="scroll-card-title">
-                    Медитація «Здійснення бажання»
-                  </h3>
-                  <p class="scroll-card-info">
-                    Інколи для того, що ми дуже сильно бажаємо заважає власний
-                    супротив або зневіра того, що ми дійсно цього гідні. <br />
-                    Дана медитація допоможе вам приблизитися до реалізації
-                    заповітного бажання шляхом дієвої психологічної техніки, яка
-                    діє безвідказно та стовідсотково.
-                  </p>
-                </div>
-              </div>
-              <div class="scroll-content-card">
-                <span class="number">7</span>
-                <div class="scroll-card-content">
-                  <h3 class="scroll-card-title">
-                    Медитація «Нова особистість»
-                  </h3>
-                  <p class="scroll-card-info">
-                    Щоб побудувати щось нове інколи необхідно попрощатися зі
-                    старим. <br />
-                    Дана медитація використовує техніку візуалізації та
-                    проживання нового досвіду бажаної вами особистості: нові
-                    звички, новий вигляд, нові ідеї та цінності. <br />Ми
-                    сформуємо нові нейронні зв‘язки і запустимо зміни, які не
-                    заставлять на себе чекати.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <button class="plan-scroll-btn">
-              <img src="./asstes/img/icon-down.svg" alt="down" />
-            </button>
-          </div>
-          <div class="bonus-container">
-            <div class="frame-small">
-              <svg
-                class="star-1"
-                width="19"
-                height="20"
-                viewBox="0 0 19 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M10.1218 0.978967C9.67573 -0.326371 9.16514 -0.326298 8.71906 0.97904L7.31622 7.95695L0.30279 9.3525C-0.921802 9.82799 1.88363 10.2726 3.10822 10.7481L7.31622 12.1436L8.71906 19.021C9.16514 20.3263 9.67573 20.3263 10.1218 19.021L11.5244 12.1436L18.5381 10.0503C19.7627 9.57479 18.5381 9.3525 15.0313 8.65473L11.5244 7.95695L10.1218 0.978967Z"
-                  fill="#0A437E"
-                />
-              </svg>
-            </div>
-            <div class="frame-big">
-              <svg
-                class="star-big"
-                width="37"
-                height="43"
-                viewBox="0 0 37 43"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_62_379)">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M19.7109 2.10478C18.8422 -0.701697 17.8479 -0.701542 16.9792 2.10493L14.2474 17.1074L0.589643 20.1079C-1.79509 21.1302 3.66812 22.086 6.05285 23.1083L14.2474 26.1087L16.9792 40.8951C17.8479 43.7016 18.8422 43.7016 19.7109 40.8951L22.4423 26.1087L36.1006 21.6081C38.4853 20.5858 36.1006 20.1079 29.2715 18.6077L22.4423 17.1074L19.7109 2.10478Z"
-                    fill="#0A437E"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_62_379">
-                    <rect width="37" height="43" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-              <svg
-                class="star-2"
-                width="19"
-                height="20"
-                viewBox="0 0 19 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M10.1218 0.978967C9.67573 -0.326371 9.16514 -0.326298 8.71906 0.97904L7.31622 7.95695L0.30279 9.3525C-0.921802 9.82799 1.88363 10.2726 3.10822 10.7481L7.31622 12.1436L8.71906 19.021C9.16514 20.3263 9.67573 20.3263 10.1218 19.021L11.5244 12.1436L18.5381 10.0503C19.7627 9.57479 18.5381 9.3525 15.0313 8.65473L11.5244 7.95695L10.1218 0.978967Z"
-                  fill="#0A437E"
-                />
-              </svg>
-              <h3 class="bonus-title">БОНУС</h3>
-              <p class="bonus-info bonus-info-1">
-                Кожного дня ви будете мати
-                <span class="bonus-info-bold">додаткове завдання</span> для
-                закріплення та більш глибокого трансформаційного шляху
-              </p>
-              <p class="bonus-info bonus-info-2">
-                Будуть <span class="bonus-info-bold">прямі ефіри </span>з Дашею,
-                під час яких ви зможете отримати відповіді на питання
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section id="plans" class="plans">
-        <div class="mobile-scroll-header mobile">
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M42 25C42 34.4 34.4 42 25 42C15.6 42 8 34.4 8 25C8 15.6 15.6 8 25 8C34.4 8 42 15.6 42 25ZM10 25C10 33.3 16.7 40 25 40C33.3 40 40 33.3 40 25C40 16.7 33.3 10 25 10C16.7 10 10 16.7 10 25Z"
-              fill="#B6C6D8"
-            />
-            <path
-              d="M26.7001 16.7L18.4001 25L26.7001 33.3L25.3001 34.7L15.6001 25L25.3001 15.2999L26.7001 16.7Z"
-              fill="#B6C6D8"
-            />
-            <path d="M17 26V24H34V26H17Z" fill="#B6C6D8" />
-          </svg>
-          <h3 class="contents">Тарифи</h3>
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M8 25C8 34.4 15.6 42 25 42C34.4 42 42 34.4 42 25C42 15.6 34.4 8 25 8C15.6 8 8 15.6 8 25ZM40 25C40 33.3 33.3 40 25 40C16.7 40 10 33.3 10 25C10 16.7 16.7 10 25 10C33.3 10 40 16.7 40 25Z"
-              fill="#B6C6D8"
-            />
-            <path
-              d="M23.2999 16.7L31.5999 25L23.2999 33.3L24.6999 34.7L34.3999 25L24.6999 15.2999L23.2999 16.7Z"
-              fill="#B6C6D8"
-            />
-            <path d="M33 26V24H16V26H33Z" fill="#B6C6D8" />
-          </svg>
-        </div>
-        <div class="tariffs-scroll-container">
-          <div class="tariff">
-            <h3 class="tariff-title">Базовий</h3>
-            <span class="tariff-for-whom">
-              Теорія медитації: <br />
-              що це і для кого?
-            </span>
-            <ul class="details-list">
-              <li class="tariff-detail">7 медитацій українською мовою</li>
-              <li class="tariff-detail">
-                Додаткові вправи та інформація для поглибленого усвідомлення та
-                практичного закріплення нових навичок
-              </li>
-            </ul>
-            <div class="tariff-additional">
-              <svg
-                class="tariff-additional-icon"
-                width="44"
-                height="44"
-                viewBox="0 0 35 38"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M2.8335 18.1665V32.8332C2.8335 33.8056 3.2198 34.7383 3.90744 35.4259C4.59507 36.1135 5.5277 36.4998 6.50016 36.4998H28.5002C29.4726 36.4998 30.4053 36.1135 31.0929 35.4259C31.7805 34.7383 32.1668 33.8056 32.1668 32.8332V18.1665"
-                  stroke="#B6C6D8"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M17.5 8.08317C17.5 6.38136 16.824 4.74926 15.6206 3.5459C14.4172 2.34254 12.7851 1.6665 11.0833 1.6665C9.86776 1.6665 8.70197 2.14939 7.84243 3.00893C6.98289 3.86847 6.5 5.03426 6.5 6.24984C6.5 7.46541 6.98289 8.6312 7.84243 9.49074C8.70197 10.3503 9.86776 10.8332 11.0833 10.8332H17.5M17.5 8.08317V10.8332M17.5 8.08317C17.5 6.38136 18.176 4.74926 19.3794 3.5459C20.5828 2.34254 22.2149 1.6665 23.9167 1.6665C25.1322 1.6665 26.298 2.14939 27.1576 3.00893C28.0171 3.86847 28.5 5.03426 28.5 6.24984C28.5 6.85173 28.3814 7.44773 28.1511 8.0038C27.9208 8.55988 27.5832 9.06514 27.1576 9.49074C26.732 9.91635 26.2267 10.254 25.6706 10.4843C25.1146 10.7146 24.5186 10.8332 23.9167 10.8332H17.5"
-                  stroke="#B6C6D8"
-                  stroke-width="2"
-                  stroke-linejoin="round"
-                />
-                <path
-                  d="M17.5 18.1663V36.4997M1 10.833H34V18.1663H1V10.833Z"
-                  stroke="#B6C6D8"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <p class="tariff-additional-text">
-                Практика дихання для заспокоєння та рівноваги 
-              </p>
-            </div>
-            <span class="tariff-price">888 грн</span>
-            <a
-              href="https://t.me/Supp0rt_servis"
-              target="_blank"
-              class="to-telegram"
-              >Медитувати</a
-            >
-          </div>
-          <div class="tariff">
-            <h3 class="tariff-title">Персональний</h3>
-            <span class="tariff-for-whom">
-              Теорія медитації: <br />
-              що це і для кого?
-            </span>
-            <ul class="details-list">
-              <li class="tariff-detail">7 медитацій українською мовою</li>
-              <li class="tariff-detail">
-                Додаткові вправи та інформація для поглибленого усвідомлення та
-                практичного закріплення нових навичок
-              </li>
-              <li class="tariff-detail">
-                Подарунок - практика дихання для заспокоєння та рівноваги 
-              </li>
-            </ul>
-            <div class="tariff-additional">
-              <svg
-                class="plus"
-                width="44"
-                height="44"
-                viewBox="0 0 44 44"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="1"
-                  y="1"
-                  width="42"
-                  height="42"
-                  rx="21"
-                  stroke="#B6C6D8"
-                  stroke-width="2"
-                />
-                <path
-                  d="M12 22H22M22 22H32M22 22V12M22 22V32"
-                  stroke="#B6C6D8"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <p class="tariff-additional-text">
-                Загальний зідзвон зі мною, де будемо розбирати 1 важливу тему,
-                вибрану загальним голосуванням
-              </p>
-            </div>
-            <div class="tariff-additional">
-              <svg
-                class="plus"
-                width="44"
-                height="44"
-                viewBox="0 0 44 44"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="1"
-                  y="1"
-                  width="42"
-                  height="42"
-                  rx="21"
-                  stroke="#B6C6D8"
-                  stroke-width="2"
-                />
-                <path
-                  d="M12 22H22M22 22H32M22 22V12M22 22V32"
-                  stroke="#B6C6D8"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <p class="tariff-additional-text">
-                Загальний зідзвон, де будемо розбирати запити кожного з
-                учасників
-              </p>
-            </div>
-            <span class="tariff-price">2222 грн</span>
-            <a
-              target="_blank"
-              href="https://t.me/Supp0rt_servis"
-              class="to-telegram"
-              >Медитувати</a
-            >
-          </div>
-          <div class="tariff">
-            <h3 class="tariff-title">Стандарт</h3>
-            <span class="tariff-for-whom">
-              Теорія медитації: <br />
-              що це і для кого?
-            </span>
-            <ul class="details-list">
-              <li class="tariff-detail">7 медитацій українською мовою</li>
-              <li class="tariff-detail">
-                Додаткові вправи та інформація для поглибленого усвідомлення та
-                практичного закріплення нових навичок
-              </li>
-              <li class="tariff-detail">
-                Подарунок - практика дихання для заспокоєння та рівноваги 
-              </li>
-            </ul>
-            <div class="tariff-additional">
-              <svg
-                class="plus"
-                width="44"
-                height="44"
-                viewBox="0 0 44 44"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <rect
-                  x="1"
-                  y="1"
-                  width="42"
-                  height="42"
-                  rx="21"
-                  stroke="#B6C6D8"
-                  stroke-width="2"
-                />
-                <path
-                  d="M12 22H22M22 22H32M22 22V12M22 22V32"
-                  stroke="#B6C6D8"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <p class="tariff-additional-text">
-                Загальний зідзвон зі мною, де будемо розбирати 1 важливу тему,
-                вибрану загальним голосуванням
-              </p>
-            </div>
-            <span class="tariff-price">1111 грн</span>
-            <a
-              target="_blank"
-              href="https://t.me/Supp0rt_servis"
-              class="to-telegram"
-              >Медитувати</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <section id="feedback" class="feedback">
-        <div class="mobile-scroll-header mobile">
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M42 25C42 34.4 34.4 42 25 42C15.6 42 8 34.4 8 25C8 15.6 15.6 8 25 8C34.4 8 42 15.6 42 25ZM10 25C10 33.3 16.7 40 25 40C33.3 40 40 33.3 40 25C40 16.7 33.3 10 25 10C16.7 10 10 16.7 10 25Z"
-              fill="#B6C6D8"
-            />
-            <path
-              d="M26.7001 16.7L18.4001 25L26.7001 33.3L25.3001 34.7L15.6001 25L25.3001 15.2999L26.7001 16.7Z"
-              fill="#B6C6D8"
-            />
-            <path d="M17 26V24H34V26H17Z" fill="#B6C6D8" />
-          </svg>
-          <h3 class="contents">Відгуки</h3>
-          <svg
-            width="50"
-            height="50"
-            viewBox="0 0 50 50"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M8 25C8 34.4 15.6 42 25 42C34.4 42 42 34.4 42 25C42 15.6 34.4 8 25 8C15.6 8 8 15.6 8 25ZM40 25C40 33.3 33.3 40 25 40C16.7 40 10 33.3 10 25C10 16.7 16.7 10 25 10C33.3 10 40 16.7 40 25Z"
-              fill="#B6C6D8"
-            />
-            <path
-              d="M23.2999 16.7L31.5999 25L23.2999 33.3L24.6999 34.7L34.3999 25L24.6999 15.2999L23.2999 16.7Z"
-              fill="#B6C6D8"
-            />
-            <path d="M33 26V24H16V26H33Z" fill="#B6C6D8" />
-          </svg>
-        </div>
-        <h2 class="feedback-title">Відгуки:</h2>
-        <div class="feedback-scroll-container">
-          <svg
-            class="arrow-left"
-            width="50"
-            height="51"
-            viewBox="0 0 50 51"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M42 25.5C42 34.9 34.4 42.5 25 42.5C15.6 42.5 8 34.9 8 25.5C8 16.1 15.6 8.5 25 8.5C34.4 8.5 42 16.1 42 25.5ZM10 25.5C10 33.8 16.7 40.5 25 40.5C33.3 40.5 40 33.8 40 25.5C40 17.2 33.3 10.5 25 10.5C16.7 10.5 10 17.2 10 25.5Z"
-              fill="#B6C6D8"
-            />
-            <path
-              d="M26.7001 17.2002L18.4001 25.5002L26.7001 33.8002L25.3001 35.2002L15.6001 25.5002L25.3001 15.8002L26.7001 17.2002Z"
-              fill="#B6C6D8"
-            />
-            <path d="M17 26.5V24.5H34V26.5H17Z" fill="#B6C6D8" />
-          </svg>
-          <div class="feedback-scroll">
-            <div class="feedback-card">
-              <img
-                src="./asstes/img/anna.png"
-                alt="avatar"
-                class="feedback-photo"
-              />
-              <div class="feedback-content">
-                <h4 class="feedback-name">Анна</h4>
-                <p class="feedback-text">
-                  Даша, у мене зараз не дуже добре з вираженням думок, але з
-                  перших секунд я повністю поринула в якесь тепле та світле
-                  місце, це була справжня магія! Я практикую медитацію, але це
-                  було щось особливе! У твоєму голосі було стільки кохання та
-                  турботи! Дякую тобі!
-                </p>
-              </div>
-            </div>
-            <div class="feedback-card">
-              <img
-                src="./asstes/img/masha.jpg"
-                alt="avatar"
-                class="feedback-photo"
-              />
-              <div class="feedback-content">
-                <h4 class="feedback-name">Маша</h4>
-                <p class="feedback-text">
-                  Мені дуже сподобалося. Просто приголомшлива енергія. Ти
-                  розумничка. Таке приємне поєднання голосу та музики. Я
-                  концентрувалася та розслаблялася одночасно. Дякую тобі!
-                </p>
-              </div>
-            </div>
-            <div class="feedback-card">
-              <img
-                src="./asstes/img/anastasia.jpg"
-                alt="avatar"
-                class="feedback-photo"
-              />
-              <div class="feedback-content">
-                <h4 class="feedback-name">Анастасія</h4>
-                <p class="feedback-text">
-                  Максимальне розслаблення. Відчуття ніби дійсно тіло з’єдналось
-                  з навколишнім середовищем і на якийсь момент була лиш енергія
-                  і більше нічого, ніяких думок, переживань, просто момент і
-                  тотальний спокій. Дякую!
-                </p>
-              </div>
-            </div>
-            <div class="feedback-card">
-              <img
-                src="./asstes/img/yulia.jpg"
-                alt="avatar"
-                class="feedback-photo"
-              />
-              <div class="feedback-content">
-                <h4 class="feedback-name">Юлія</h4>
-                <p class="feedback-text">
-                  Я твої медитації на заспокоєння та зняття стресу слухаю, бо
-                  лише це мені трохи надає сил, я хоча б вночі не плачу. Вони
-                  мені дуже сильно допомагають. Вдячна тобі за це !
-                </p>
-              </div>
-            </div>
-          </div>
-          <svg
-            class="arrow-right"
-            width="50"
-            height="51"
-            viewBox="0 0 50 51"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M8 25.5C8 34.9 15.6 42.5 25 42.5C34.4 42.5 42 34.9 42 25.5C42 16.1 34.4 8.5 25 8.5C15.6 8.5 8 16.1 8 25.5ZM40 25.5C40 33.8 33.3 40.5 25 40.5C16.7 40.5 10 33.8 10 25.5C10 17.2 16.7 10.5 25 10.5C33.3 10.5 40 17.2 40 25.5Z"
-              fill="#B6C6D8"
-            />
-            <path
-              d="M23.2999 17.2002L31.5999 25.5002L23.2999 33.8002L24.6999 35.2002L34.3999 25.5002L24.6999 15.8002L23.2999 17.2002Z"
-              fill="#B6C6D8"
-            />
-            <path d="M33 26.5V24.5H16V26.5H33Z" fill="#B6C6D8" />
-          </svg>
-        </div>
-      </section>
-
-      <section class="conclusion">
-        <div class="conclusion-icon-content">
-          <svg
-            class="conclusion-icon"
-            width="80"
-            height="80"
-            viewBox="0 0 80 80"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink"
-          >
-            <rect width="80" height="80" fill="url(#pattern0_78_1602)" />
-            <defs>
-              <pattern
-                id="pattern0_78_1602"
-                patternContentUnits="objectBoundingBox"
-                width="1"
-                height="1"
-              >
-                <use
-                  xlink:href="#image0_78_1602"
-                  transform="scale(0.00195312)"
-                />
-              </pattern>
-              <image
-                id="image0_78_1602"
-                width="512"
-                height="512"
-                xlink:href="data:image/png;base64,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"
-              />
-            </defs>
-          </svg>
-        </div>
-        <p class="conclusion-text">
-          Почни змінювати
-          <span class="conclusion-bold">себе і світ</span> навколо<br> <br />Зроби
-          перший крок до своєї трансформації та внутрішної
-          <span class="conclusion-bold">гармонії</span><br> <br />Не пропусти
-          <span class="conclusion-bold">шанс</span> змінити своє життя на краще
-        </p>
-      </section>
-    </main>
-    <footer class="footer">
-      <div class="footer-links">
-        <a href="" class="footer-link">Головна</a>
-        <a href="#for-whom" class="footer-link">Для кого</a>
-        <a href="#author" class="footer-link">Про автора</a>
-        <a href="#advantages" class="footer-link">Переваги</a>
-      </div>
-      <div class="footer-links">
-        <a href="#plan" class="footer-link">Програма</a>
-        <a href="#feedback" class="footer-link">Відгуки</a>
-        <a href="#meditation" class="footer-link">Безкоштовна медитація</a>
-        <a href="#plans" class="footer-link">Тарифи</a>
-      </div>
-      <div class="footer-links">
-        <p class="footer-link footer-header">Контакти</p>
-        <a href="tel:+380636862811" class="footer-link">+380 63 686 28 11</a>
-        <a
-          href="https://www.instagram.com/daruyusvitlo?igsh=MWljdTB6M21iaHFrNQ=="
-          class="footer-link"
-          target="_blank"
-          ><svg
-            width="44"
-            height="44"
-            viewBox="0 0 44 44"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M21.9998 17.4532C21.1006 17.4532 20.2215 17.7198 19.4738 18.2194C18.7261 18.719 18.1434 19.4291 17.7993 20.2599C17.4551 21.0907 17.3651 22.0049 17.5405 22.8868C17.716 23.7688 18.149 24.579 18.7849 25.2148C19.4207 25.8507 20.2309 26.2837 21.1128 26.4591C21.9948 26.6346 22.909 26.5445 23.7398 26.2004C24.5706 25.8563 25.2807 25.2735 25.7803 24.5258C26.2798 23.7781 26.5465 22.8991 26.5465 21.9998C26.5465 21.4028 26.4289 20.8115 26.2004 20.2599C25.9719 19.7083 25.637 19.2071 25.2148 18.7849C24.7926 18.3627 24.2914 18.0278 23.7398 17.7993C23.1881 17.5708 22.5969 17.4532 21.9998 17.4532ZM40.2048 12.9615C40.1952 11.5457 39.9345 10.1429 39.4348 8.81817C39.0669 7.84881 38.4975 6.96851 37.7643 6.23534C37.0312 5.50218 36.1509 4.93282 35.1815 4.56484C33.8568 4.06519 32.4539 3.80448 31.0382 3.79484C28.6732 3.6665 27.9765 3.6665 21.9998 3.6665C16.0232 3.6665 15.3265 3.6665 12.9615 3.79484C11.5457 3.80448 10.1429 4.06519 8.81817 4.56484C7.84881 4.93282 6.96851 5.50218 6.23534 6.23534C5.50218 6.96851 4.93282 7.84881 4.56484 8.81817C4.06519 10.1429 3.80448 11.5457 3.79484 12.9615C3.6665 15.3265 3.6665 16.0232 3.6665 21.9998C3.6665 27.9765 3.6665 28.6732 3.79484 31.0382C3.81457 32.4589 4.07492 33.8661 4.56484 35.1998C4.93119 36.1648 5.50007 37.04 6.23317 37.7665C6.96319 38.5041 7.84538 39.0734 8.81817 39.4348C10.1429 39.9345 11.5457 40.1952 12.9615 40.2048C15.3265 40.3332 16.0232 40.3332 21.9998 40.3332C27.9765 40.3332 28.6732 40.3332 31.0382 40.2048C32.4539 40.1952 33.8568 39.9345 35.1815 39.4348C36.1543 39.0734 37.0365 38.5041 37.7665 37.7665C38.4996 37.04 39.0685 36.1648 39.4348 35.1998C39.934 33.8686 40.1947 32.4599 40.2048 31.0382C40.3332 28.6732 40.3332 27.9765 40.3332 21.9998C40.3332 16.0232 40.3332 15.3265 40.2048 12.9615ZM35.5482 27.6282C35.4893 28.7595 35.2479 29.8739 34.8332 30.9282C34.4773 31.8076 33.9482 32.6065 33.2773 33.2773C32.6065 33.9482 31.8076 34.4773 30.9282 34.8332C29.8639 35.2248 28.7433 35.4415 27.6098 35.4748H16.3898C15.2563 35.4415 14.1357 35.2248 13.0715 34.8332C12.1624 34.4953 11.3413 33.9563 10.6698 33.2565C10.0056 32.5988 9.49255 31.8043 9.1665 30.9282C8.77336 29.8651 8.56262 28.7432 8.54317 27.6098V16.3898C8.56262 15.2565 8.77336 14.1346 9.1665 13.0715C9.50435 12.1624 10.0433 11.3413 10.7432 10.6698C11.4038 10.0091 12.1975 9.49668 13.0715 9.1665C14.1357 8.77491 15.2563 8.55822 16.3898 8.52484H27.6098C28.7433 8.55822 29.8639 8.77491 30.9282 9.1665C31.8373 9.50435 32.6583 10.0433 33.3298 10.7432C33.9941 11.4009 34.5071 12.1954 34.8332 13.0715C35.2248 14.1357 35.4415 15.2563 35.4748 16.3898V21.9998C35.4748 25.7765 35.6032 26.1615 35.5482 27.6098V27.6282ZM32.6148 13.9882C32.3966 13.396 32.0524 12.8582 31.6061 12.4119C31.1598 11.9656 30.622 11.6215 30.0298 11.4032C29.2167 11.1213 28.3603 10.9848 27.4998 10.9998H16.4998C15.635 11.0083 14.7785 11.1697 13.9698 11.4765C13.3867 11.6849 12.8546 12.015 12.4089 12.4449C11.9632 12.8748 11.6141 13.3946 11.3848 13.9698C11.1186 14.7863 10.9885 15.6411 10.9998 16.4998V27.4998C11.018 28.3637 11.1791 29.2186 11.4765 30.0298C11.6948 30.622 12.0389 31.1598 12.4852 31.6061C12.9315 32.0524 13.4693 32.3966 14.0615 32.6148C14.8437 32.9025 15.6669 33.0634 16.4998 33.0915H27.4998C28.3647 33.083 29.2212 32.9217 30.0298 32.6148C30.622 32.3966 31.1598 32.0524 31.6061 31.6061C32.0524 31.1598 32.3966 30.622 32.6148 30.0298C32.9217 29.2212 33.083 28.3647 33.0915 27.4998V16.4998C33.092 15.6341 32.9304 14.776 32.6148 13.9698V13.9882ZM21.9998 29.0032C21.081 29.0032 20.1712 28.8219 19.3226 28.4697C18.4739 28.1175 17.7031 27.6014 17.0542 26.9508C16.4053 26.3003 15.8912 25.5281 15.5413 24.6785C15.1913 23.8289 15.0124 22.9187 15.0148 21.9998C15.0148 20.6139 15.426 19.2592 16.1964 18.1071C16.9667 16.955 18.0616 16.0574 19.3424 15.5279C20.6231 14.9983 22.0322 14.8607 23.3912 15.1324C24.7502 15.4042 25.9981 16.073 26.9768 17.0543C27.9555 18.0355 28.621 19.2851 28.8892 20.6448C29.1573 22.0045 29.016 23.4133 28.4831 24.6926C27.9503 25.972 27.0498 27.0645 25.8957 27.8318C24.7416 28.5991 23.3857 29.0068 21.9998 29.0032ZM29.3332 16.3715C28.9279 16.3286 28.5528 16.1372 28.2803 15.8343C28.0077 15.5313 27.8569 15.1382 27.8569 14.7307C27.8569 14.3231 28.0077 13.93 28.2803 13.6271C28.5528 13.3241 28.9279 13.1327 29.3332 13.0898C29.7384 13.1327 30.1135 13.3241 30.3861 13.6271C30.6587 13.93 30.8095 14.3231 30.8095 14.7307C30.8095 15.1382 30.6587 15.5313 30.3861 15.8343C30.1135 16.1372 29.7384 16.3286 29.3332 16.3715Z"
-              fill="#0A437E"
-            />
-          </svg>
-        </a>
-      </div>
-      <div class="footer-links">
-        <p class="footer-link footer-header">E-mail</p>
-        <a href="mailto:Rockettta@gmail.com " class="footer-link"
-          >Rockettta@gmail.com
-        </a>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
   <script src="./script.js"></script>
 </html>
